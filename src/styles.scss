@@ -275,7 +275,7 @@ img {
         left: -45px;
         width: 45px;
         height: 1px;
-        background-image: linear-gradient(to right,#ff2500,#ff7100);
+        background-image: linear-gradient(to right,$color-black,$color-black);
     }
 }
 .sp-after {
@@ -289,7 +289,7 @@ img {
         right: -45px;
         width: 45px;
         height: 1px;
-        background-image: linear-gradient(to right,#ff2500,#ff7100);
+        background-image: linear-gradient(to right,$color-black,$color-black);
     }
 }
 .h2-color {
@@ -473,18 +473,19 @@ Navbar Area
                 }
                 .nav-menu-btn {
                     padding: 10px 27px;
-                    color: $color-white;
+                    color: $color-black;
                     text-align: center;
                     position: relative;
                     overflow: hidden;
                     z-index: 1;
                     text-transform: capitalize;
-                    background-image: linear-gradient(to right,#ff2500,#ff7100);
+                    background-color: #e5e5e5;
                     border-radius: 50px;
                     transition: 0.7s;
 
                     &:hover {
                         background-image: linear-gradient(to right,#4400ff,#0077ff);
+                        color: white;
                     }
                 }
                 .search-box-2 {
@@ -1120,7 +1121,7 @@ Main Banner Area CSS
             font-size: 26px;
             color: $color-white;
             display: inline-block;
-            background-image: linear-gradient(to right,#ff2500,#ff7100);
+            background-image: linear-gradient(to right,#e5e5e5,$color-black);
             border-radius: 50px;
             text-align: center;
             margin-right: 5px;
@@ -1895,10 +1896,10 @@ About Area
                 width: 100%;
             }
             span {
-                color: $color-white;
+                color: $color-black;
             }
             p {
-                color: $color-white;
+                color: $color-black;
             }
         }
         &::before {
@@ -1911,7 +1912,7 @@ About Area
             width: 0;
             height: 100%;
             border-radius: 5px;
-            background-image: linear-gradient(to right,#ff2500,#ff7100);
+            background-image: linear-gradient(to right,#e5e5e5,#e5e5e5);
             transition: 0.7s;
             opacity: 0;
         }
@@ -3772,7 +3773,13 @@ Mission Area
     }
     .mission-list {
         margin-bottom: 20px;
-        padding: 10px 7px 10px 40px;
+        width: 170px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
         background-color: $color-white;
         border-radius: 5px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -3785,10 +3792,10 @@ Mission Area
                 width: 100%;
             }
             span {
-                color: $color-white;
+                color: $color-black;
             }
             p {
-                color: $color-white;
+                color: $color-black;
             }
         }
         &::before {
@@ -3801,7 +3808,7 @@ Mission Area
             width: 0;
             height: 100%;
             border-radius: 5px;
-            background-image: linear-gradient(to right,#ff2500,#ff7100);
+            background-image: linear-gradient(to right,#e5e5e5,#e5e5e5);
             transition: 0.7s;
             opacity: 0;
         }
