@@ -44,8 +44,6 @@ const routes: Routes = [
     {path: 'blog', component: BlogComponent},
     {path: 'blog-details', component: BlogDetailsComponent},
     {path: 'contact', component: ContactComponent},
-    
-
     {path: '**', component: ErrorComponent}
 ];
 

@@ -31,7 +31,7 @@ import { ServicesDetailsComponent } from './components/pages/services-details/se
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
-import {CrossedLineTitle} from "./components/common/crossed-line-title/crossed-line-title";
+import {CrossedLineTitle} from './components/common/crossed-line-title/crossed-line-title';
 
 @NgModule({
   declarations: [
