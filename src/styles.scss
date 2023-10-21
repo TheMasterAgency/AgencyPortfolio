@@ -63,6 +63,7 @@ body {
     line-height: 1.8;
     font-family: $body-font;
     color: $paragraph-color;
+    overflow-x: hidden;
 }
 p {
     color: $paragraph-color;
