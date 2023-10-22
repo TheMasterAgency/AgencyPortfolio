@@ -8,7 +8,6 @@ import {Component, Input, OnInit} from '@angular/core';
 export class CrossedLineTitle {
 
     @Input() titleTinyPart: string;
-
     @Input() titleBoldPart: string;
 
 }

@@ -63,7 +63,6 @@ body {
     line-height: 1.8;
     font-family: $body-font;
     color: $paragraph-color;
-    overflow-x: hidden;
 }
 p {
     color: $paragraph-color;
@@ -5696,9 +5695,7 @@ Faq Area
     margin-right: auto;
 }
 .faq-img {
-    width: 500px;
     margin-bottom: 30px;
-    margin-left: 80px;
 }
 .data-table-area {
     padding-top: 60px;
