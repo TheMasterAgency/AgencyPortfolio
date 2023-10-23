@@ -1,6 +1,9 @@
 @media only screen and (max-width : 767px) {
 
     /* Default CSS */
+    .container {
+        padding-top: 10vh;
+    }
     body {
         font-size: 14px;
     }
@@ -127,7 +130,7 @@
 
     /* Main Banner CSS */
     .banner-content {
-        padding-top: 110px;
+        padding-top: 10vh;
         padding-bottom: 20px;
 
         .title {
@@ -1349,6 +1352,12 @@
     }
 
 }
+@media only screen and (max-width : 990px) {
+    .container {
+        padding-top: 10vh;
+    }
+
+}
 
 @media only screen and (min-width : 576px) and (max-width : 767px) {
 
@@ -1534,14 +1543,14 @@
             font-size: 16px;
         }
     }
-    .section-title {
-        h2 {
-            font-size: 24px;
-        }
-        p {
-            padding-top: 10px;
-        }
-    }
+    //.section-title {
+    //    h2 {
+    //        font-size: 24px;
+    //    }
+    //    p {
+    //        padding-top: 10px;
+    //    }
+    //}
     /* Default CSS End */
 
     /* Navbar CSS */
@@ -1609,7 +1618,7 @@
 
     /* Main Banner CSS */
     .banner-content {
-        padding-top: 110px;
+        padding-top: 5vh;
         padding-bottom: 20px;
 
         .title {
