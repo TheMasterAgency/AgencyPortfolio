@@ -243,15 +243,47 @@ img {
 /*section-title*/
 .section-title {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
     span {
         line-height: 0;
+        font-size: 1.5rem;
         text-transform: capitalize;
         padding-bottom: 5px;
         font-weight: 600;
-        color: $main-color;
+        margin-bottom: 1rem;
+        color: #0049b1;
+    }
+    h2 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 5px;
+        line-height: 1.4;
+
+        b {
+            font-weight: 300;
+        }
+    }
+    p {
+        padding-top: 10px;
+        margin-bottom: 0;
+    }
+}
+.section-title-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    span {
+        line-height: 0;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        padding-bottom: 5px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #0049b1;
     }
     h2 {
         font-size: 50px;
@@ -275,11 +307,12 @@ img {
     &::before {
         content: '';
         position: absolute;
-        bottom: 10px;
-        left: -45px;
+        bottom: 50%;
+        left: -50px;
         width: 45px;
-        height: 1px;
-        background-image: linear-gradient(to right,$color-black,$color-black);
+        height: 2px;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,#0049b1, #0049b1);
     }
 }
 .sp-after {
@@ -289,11 +322,12 @@ img {
     &::after {
         content: '';
         position: absolute;
-        bottom: 10px;
-        right: -45px;
+        bottom: 50%;
+        right: -50px;
         width: 45px;
-        height: 1px;
-        background-image: linear-gradient(to right,$color-black,$color-black);
+        height: 2px;
+        border-radius: 10px;
+        background-image: linear-gradient(to right,#0049b1, #0049b1);
     }
 }
 .h2-color {

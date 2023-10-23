@@ -40,10 +40,21 @@
     }
     .section-title {
         span {
-            font-size: 12px;
+            font-size: 1.6rem;
         }
         h2 {
-            font-size: 24px;
+            font-size: 1.6rem;
+        }
+        p {
+            padding-top: 10px;
+        }
+    }
+    .section-title-center {
+        span {
+            font-size: 1.6rem;
+        }
+        h2 {
+            font-size: 1.6rem;
         }
         p {
             padding-top: 10px;
@@ -167,7 +178,7 @@
                     font-size: 16px;
                 }
             }
-        } 
+        }
     }
     .banner-shape {
         display: none;
@@ -256,7 +267,7 @@
         right: 0;
         left: 0;
         text-align: center;
-        
+
         img {
             max-width: 100%;
             height: auto;
@@ -395,7 +406,7 @@
     }
     .about-widget-content {
         margin-bottom: 30px;
-        
+
         h3 {
             font-size: 17px;
         }
@@ -412,7 +423,7 @@
             }
         }
     }
-    
+
     /* About Area CSS End */
     .schedule-content {
         max-width: 100%;
@@ -432,7 +443,7 @@
             margin-bottom: 25px;
         }
     }
-    
+
     /* Counter Area CSS */
     .counter-area {
         background-image: none;
@@ -564,10 +575,10 @@
     }
     .services-shape {
         display: none;
-    } 
+    }
     .service-two-shape {
         display: none;
-    } 
+    }
     .service-another {
         padding-top: 50px;
     }
@@ -583,7 +594,7 @@
             margin-bottom: 10px;
         }
         p {
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
         }
     }
     .content-widget-area {
@@ -642,7 +653,7 @@
         margin-bottom: 30px;
     }
     /* Service Details Area CSS End */
-   
+
     /* History Area CSS */
     .history-list {
         margin-top: 30px;
@@ -701,7 +712,7 @@
         }
     }
     /* Courses Area CSS End */
-    
+
     /* Work Area CSS */
     .work-area {
         background-image: none;
@@ -752,6 +763,8 @@
             margin-bottom: 30px;
         }
         .mission-list {
+            width: 100%;
+            height: 150px;
             margin-right: 15px;
             margin-bottom: 30px;
         }
@@ -1029,8 +1042,8 @@
                 p {
                     font-size: 18px;
                     margin-top: 10px;
-                    margin-right: 0; 
-                    margin-left: 0; 
+                    margin-right: 0;
+                    margin-left: 0;
                 }
             }
         }
@@ -1103,7 +1116,7 @@
             .article-post-share {
                 margin-bottom: 10px;
             }
-        } 
+        }
         .comments-wrap {
             .title {
                 margin-bottom: 0;
@@ -1126,7 +1139,7 @@
                         margin-left: 15px;
                     }
                     p {
-                        margin-left: 15px; 
+                        margin-left: 15px;
                     }
                     a {
                         position: inherit;
@@ -1220,7 +1233,7 @@
         }
     }
     /* User All End */
-    
+
     /* Footer Area CSS */
     .footer-img {
         img {
@@ -1354,7 +1367,7 @@
             text-align: center;
         }
     }
-     
+
     .serve-area {
         .container-fluid {
             width: 540px;
@@ -1367,7 +1380,7 @@
         ul {
             li {
                 margin-right: 15px;
-                
+
                 i {
                     font-size: 30px;
                     width: 55px;
@@ -1419,7 +1432,7 @@
             }
         }
     }
-    
+
     .courses-card {
         padding: 30px 100px 30px 30px;
 
@@ -1451,7 +1464,7 @@
         background-image: none;
         background-color: #ff3900;
         padding: 50px 30px;
-        
+
         .owl-nav {
             .owl-prev {
                 bottom: -10px;
@@ -1522,9 +1535,6 @@
         }
     }
     .section-title {
-        span {
-            font-size: 12px;
-        }
         h2 {
             font-size: 24px;
         }
@@ -1650,7 +1660,7 @@
                     font-size: 16px;
                 }
             }
-        } 
+        }
     }
     .banner-shape {
         display: none;
@@ -1821,7 +1831,7 @@
     }
     .about-widget-content {
         margin-bottom: 30px;
-        
+
         p {
             margin-bottom: 25px;
         }
@@ -1839,7 +1849,7 @@
         }
         .about-btn {
             margin-top: 25px;
-            
+
             .play-btn {
                 font-size: 14px;
                 margin-left: 15px;
@@ -2008,7 +2018,7 @@
     }
     .services-shape {
         display: none;
-    } 
+    }
     .services-area-two {
         padding-bottom: 30px;
     }
@@ -2019,10 +2029,10 @@
     }
     .services-shape {
         display: none;
-    } 
+    }
     .service-two-shape {
         display: none;
-    } 
+    }
     .services-area-three {
         .section-title {
             p {
@@ -2057,7 +2067,7 @@
             }
         }
     }
-    
+
     .history-list {
         margin-bottom: 20px;
         ul {
@@ -2282,7 +2292,7 @@
         border: 15px solid #ffe8df;
         margin-left: auto;
         margin-right: auto;
-       
+
     }
     .testimonial-title {
         margin-top: 30px;
@@ -2412,7 +2422,7 @@
         h2 {
             font-size: 24px;
         }
-    } 
+    }
 
     /* Contact Area CSS */
     .contact-card {
@@ -2571,7 +2581,7 @@
                             width: 40px;
                             font-size: 16px;
                         }
-                    } 
+                    }
                     .nav-menu-btn {
                         padding: 10px 16px;
                     }
@@ -2586,7 +2596,7 @@
             }
         }
     }
-  
+
     .banner-shape-right {
         img {
             max-width: 330px;
@@ -2658,7 +2668,7 @@
             }
         }
     }
-     
+
     .services-content-card {
         padding: 30px 15px;
 
@@ -2720,7 +2730,7 @@
             max-width: 100%;
         }
     }
-   
+
     .work-shape {
         top: 250px;
     }
@@ -2751,7 +2761,7 @@
     }
     .testimonial-content {
         height: 520px;
-        
+
         .testimonial-content1 {
             left: -8%;
         }
@@ -2788,7 +2798,7 @@
             font-size: 30px;
         }
     }
-     
+
     .blog-card {
         .content {
             padding: 20px 15px;
@@ -2821,11 +2831,11 @@
             }
         }
     }
-    
+
 }
 
 @media only screen and (min-width : 1800px) {
-    
+
     .banner-shape-right {
         position: absolute;
         top: 0;
@@ -2879,7 +2889,7 @@
             bottom: 0;
         }
     }
-     
+
     .inner-banner {
         .inner-banner-shape {
             .shape-one {
@@ -2893,7 +2903,7 @@
             }
         }
     }
-     
+
     .about-shape {
         .shape-1 {
             top: 0;
@@ -2940,11 +2950,11 @@
     .container-max {
         max-width: 1300px !important;
         margin: 0 auto;
-    } 
+    }
     .container-max-2 {
         max-width: 1460px !important;
         margin: 0 auto;
-    } 
+    }
     .brand-max {
         max-width: 1240px;
         margin: 0 auto;
