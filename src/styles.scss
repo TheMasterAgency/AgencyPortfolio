@@ -6545,8 +6545,11 @@ Preloader CSS
     background: $main-color;
 }
 .spinner {
-    width: 40px;
-    height: 40px;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     border-radius: 5px;
     background-color: $color-white;
     margin: 100px auto;
