@@ -32,6 +32,7 @@ import { BlogDetailsComponent } from './components/pages/blog-details/blog-detai
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import {CrossedLineTitle} from './components/common/crossed-line-title/crossed-line-title';
+import { ServicesDataComponent } from './components/pages/services-data/services-data.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import {CrossedLineTitle} from './components/common/crossed-line-title/crossed-l
     BlogDetailsComponent,
     BlogComponent,
     ContactComponent,
-      CrossedLineTitle
+      CrossedLineTitle,
+      ServicesDataComponent
   ],
   imports: [
     BrowserModule,
