@@ -21,6 +21,7 @@ import { ServicesDetailsComponent } from './components/pages/services-details/se
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import {ServicesDataComponent} from "./components/pages/services-data/services-data.component";
 
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
@@ -41,6 +42,7 @@ const routes: Routes = [
     {path: 'coming-soon', component: ComingSoonComponent},
     {path: 'services', component: ServicesComponent},
     {path: 'services-details', component: ServicesDetailsComponent},
+    {path: 'services-data', component: ServicesDataComponent},
     {path: 'blog', component: BlogComponent},
     {path: 'blog-details', component: BlogDetailsComponent},
     {path: 'contact', component: ContactComponent},
