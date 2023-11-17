@@ -20,7 +20,7 @@ import { ServicesComponent } from './components/pages/services/services.componen
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
-import {ServicesDataComponent} from "./components/pages/services-data/services-data.component";
+import {ServicesDataComponent} from "./components/pages/services-details/services-data/services-data.component";
 import {
     SoftwareDevelopmentServiceDetails
 } from "./components/pages/services-details/software-development-service-details/software-development-service-details";
