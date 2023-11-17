@@ -33,14 +33,23 @@ import { BlogComponent } from './components/pages/blog/blog.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import {CrossedLineTitle} from './components/common/crossed-line-title/crossed-line-title';
 import { ServicesDataComponent } from './components/pages/services-data/services-data.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {ToastrModule} from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
-  declarations: [
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        ToastrModule.forRoot(),
+        FormsModule
+    ],
+    declarations: [
     AppComponent,
     SeoAgencyComponent,
     AiStartupComponent,
@@ -72,14 +81,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ContactComponent,
       CrossedLineTitle,
       ServicesDataComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-      ReactiveFormsModule,
-      HttpClientModule,
-      BrowserAnimationsModule,
-      ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,45 +15,65 @@
     <div class="col-lg-7 col-md-12">
         <div class="faq-contact-wrap">
             <div class="contact-form">
-                <form [formGroup]="FormData" (ngSubmit)="sendEmail($event)"  id="contactForm">
+                <form [formGroup]="FormData" (ngSubmit)="sendEmail($event)" id="contactForm">
                     <div class="row">
                         <div class="col-lg-6 col-sm-6">
                             <div class="form-group">
                                 <i class='bx bx-user'></i>
-                                <input type="text" [formControlName]="'name'" name="name" id="name" class="form-control" placeholder="Your Name*">
+                                <input type="text" [formControlName]="'name'" name="name" id="name" class="form-control" placeholder="Your Name*" required>
+                                <p *ngIf="!FormData.get('name')?.valid && FormData.get('name')?.touched"
+                                   class="error-msg">
+                                    Can you please enter your name
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-sm-6">
                             <div class="form-group">
                                 <i class='bx bx-user'></i>
-                                <input type="email" [formControlName]="'email'" name="email" id="email" class="form-control" required placeholder="E-mail*">
+                                <input type="email" [formControlName]="'email'" name="email" id="email" class="form-control" required placeholder="E-mail*" required>
+                                <p *ngIf="!FormData.get('email')?.valid && FormData.get('email')?.touched"
+                                   class="error-msg">
+                                    Can you please enter your email
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-sm-6">
                             <div class="form-group">
                                 <i class='bx bx-phone'></i>
-                                <input type="text" name="phone_number" [formControlName]="'phone_number'" id="phone_number" required class="form-control" placeholder="Your Phone">
+                                <input type="text" name="phone_number" [formControlName]="'phone_number'" id="phone_number" required class="form-control" placeholder="Your Phone*" required>
+                                <p *ngIf="!FormData.get('phone_number')?.valid && FormData.get('phone_number')?.touched"
+                                   class="error-msg">
+                                    Can you please enter your phone number
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-lg-6 col-sm-6">
                             <div class="form-group">
                                 <i class='bx bx-file'></i>
-                                <input type="text" name="msg_subject" [formControlName]="'msg_subject'" id="msg_subject" class="form-control" required placeholder="Your Subject">
+                                <input type="text" name="msg_subject" [formControlName]="'msg_subject'" id="msg_subject" class="form-control" required placeholder="Your Subject*" required>
+                                <p *ngIf="!FormData.get('msg_subject')?.valid && FormData.get('msg_subject')?.touched"
+                                   class="error-msg">
+                                    Can you please enter your subject
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-lg-12 col-md-12">
                             <div class="form-group">
                                 <i class='bx bx-envelope'></i>
-                                <textarea name="message" [formControlName]="'message'" class="form-control" id="message" cols="30" rows="8" required placeholder="Your Message"></textarea>
+                                <textarea name="message" [formControlName]="'message'" class="form-control" id="message" cols="30" rows="8" required placeholder="Your Message*" required></textarea>
+                                <p *ngIf="!FormData.get('message')?.valid && FormData.get('message')?.touched"
+                                   class="error-msg">
+                                    Can you please enter your message
+                                </p>
                             </div>
                         </div>
 
                         <div class="col-lg-12 col-md-12">
-                            <button type="submit" class="default-btn border-radius">Send Message <i class='bx bx-plus'></i></button>
+                            <button [disabled]="!FormData.valid"  type="submit" class="default-btn border-radius">Send Message <i class='bx bx-plus'></i></button>
                         </div>
                     </div>
                 </form>
