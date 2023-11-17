@@ -1,0 +1,14 @@
+import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ContactService {
+
+  constructor(private http: HttpClient) { }
+
+    PostMessage(input:any){
+      console.log("hey")
+    }
+}
