@@ -17,11 +17,13 @@ import { TermsConditionsComponent } from './components/pages/terms-conditions/te
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { ServicesComponent } from './components/pages/services/services.component';
-import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import {ServicesDataComponent} from "./components/pages/services-data/services-data.component";
+import {
+    SoftwareDevelopmentServiceDetails
+} from "./components/pages/services-details/software-development-service-details/software-development-service-details";
 
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
@@ -41,11 +43,11 @@ const routes: Routes = [
     {path: 'privacy-policy', component: PrivacyPolicyComponent},
     {path: 'coming-soon', component: ComingSoonComponent},
     {path: 'services', component: ServicesComponent},
-    {path: 'services-details', component: ServicesDetailsComponent},
     {path: 'services-data', component: ServicesDataComponent},
     {path: 'blog', component: BlogComponent},
     {path: 'blog-details', component: BlogDetailsComponent},
     {path: 'contact', component: ContactComponent},
+    {path: 'software-development-details', component: SoftwareDevelopmentServiceDetails},
     {path: '**', component: ErrorComponent}
 ];
 

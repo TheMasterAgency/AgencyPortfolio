@@ -27,12 +27,15 @@ import { TermsConditionsComponent } from './components/pages/terms-conditions/te
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { ServicesComponent } from './components/pages/services/services.component';
-import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import {CrossedLineTitle} from './components/common/crossed-line-title/crossed-line-title';
 import { ServicesDataComponent } from './components/pages/services-data/services-data.component';
+import { SoftwareDevelopmentServiceDetails } from './components/pages/services-details/software-development-service-details/software-development-service-details';
+import { ServicesTableComponent } from './components/pages/services-details/components/services-table/services-table.component';
+import { ContentCardComponent } from './components/common/content-card/content-card.component';
+import { ContentWidgetAreaComponent } from './components/common/content-widget-area/content-widget-area.component';
 
 @NgModule({
   declarations: [
@@ -61,12 +64,15 @@ import { ServicesDataComponent } from './components/pages/services-data/services
     PrivacyPolicyComponent,
     ComingSoonComponent,
     ServicesComponent,
-    ServicesDetailsComponent,
     BlogDetailsComponent,
     BlogComponent,
     ContactComponent,
       CrossedLineTitle,
-      ServicesDataComponent
+      ServicesDataComponent,
+      SoftwareDevelopmentServiceDetails,
+      ServicesTableComponent,
+      ContentCardComponent,
+      ContentWidgetAreaComponent
   ],
   imports: [
     BrowserModule,
