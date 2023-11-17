@@ -1,0 +1,84 @@
+<app-navbar-style-one></app-navbar-style-one>
+
+<div class="services-details-area pb-70">
+    <div class="container">
+        <crossed-line-title [titleTinyPart]="'Social Media'" [titleBoldPart]="'Management'"></crossed-line-title>
+        <div class="row pt-45">
+            <div class="col-lg-8 col-md-12">
+                <div class="services-left">
+                    <div class="services-content">
+                        <img style="height: 400px" src="assets/img/service/social-media1.jpg" alt="Images">
+                        <h2>Take Your Social Media Management to the Next Level</h2>
+                        <p>At <strong>TENDEXE</strong> , we are passionate about helping businesses thrive in the digital landscape. With a team of dedicated social media experts, we specialize in creating and implementing strategies that drive engagement, increase brand visibility, and ultimately boost your bottom line.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6" *ngFor="let item of servicesCardsContent">
+                            <app-content-card [title]="item.title" [content]="item.content"></app-content-card>
+                        </div>
+                    </div>
+
+                    <div class="content-widget-area">
+                        <div class="row">
+                            <app-content-widget-area [image]="'assets/img/service/service-details-img2.png'">
+                                <div text>
+                                    <h2>Why Choose TENDEXE?</h2>
+                                    <p>here are three major reasons that differentiate us and are able to manage this service perfectly :</p>
+                                    <ul>
+                                        <li><i class='bx bx-check'></i> Expertise</li>
+                                        <li><i class='bx bx-check'></i> Adaptable Approach  </li>
+                                        <li><i class='bx bx-check'></i> Responsive Communication</li>
+                                    </ul>
+                                </div>
+                            </app-content-widget-area>
+                        </div>
+                    </div>
+
+                    <p>At <strong>TENDEXE</strong> , we're not just a social media management agency; we're your dedicated partners in digital success. With a foundation built on expertise, creativity, adaptability, and transparent communication, we are committed to crafting a social media strategy that not only meets but exceeds your unique business goals. Let's embark on a journey of innovation, measurable results, and lasting connections. Your brand deserves to shine in the digital spotlight, and we're here to make it happen. Contact us today, and let's elevate your social media presence together!</p>
+
+<!--                    <div class="services-widget-list">-->
+<!--                        <ul>-->
+<!--                            <li class="active">-->
+<!--                                <span>75%</span>-->
+<!--                                <div class="content list1">-->
+<!--                                    <h3>SEO & Marketing</h3>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <div class="content list2">-->
+<!--                                    <h3>Keywords Results</h3>-->
+<!--                                </div>-->
+<!--                                <span>66%</span>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <span>43%</span>-->
+<!--                                <div class="content list3">-->
+<!--                                    <h3>Google Analytics</h3>-->
+<!--                                </div>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <div class="content list2">-->
+<!--                                    <h3>Off Page SEO</h3>-->
+<!--                                </div>-->
+<!--                                <span>15%</span>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="services-widget-right">
+                    <app-services-table></app-services-table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="data-table-area">
+        <div class="container">
+            <app-get-started-area></app-get-started-area>
+        </div>
+    </div>
+</div>
+
+<app-footer-style-two></app-footer-style-two>
