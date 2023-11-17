@@ -36,6 +36,7 @@ import { SoftwareDevelopmentServiceDetails } from './components/pages/services-d
 import { ServicesTableComponent } from './components/pages/services-details/components/services-table/services-table.component';
 import { ContentCardComponent } from './components/common/content-card/content-card.component';
 import { ContentWidgetAreaComponent } from './components/common/content-widget-area/content-widget-area.component';
+import { GetStartedAreaComponent } from './components/common/get-started-area/get-started-area.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { ContentWidgetAreaComponent } from './components/common/content-widget-a
       SoftwareDevelopmentServiceDetails,
       ServicesTableComponent,
       ContentCardComponent,
-      ContentWidgetAreaComponent
+      ContentWidgetAreaComponent,
+      GetStartedAreaComponent
   ],
   imports: [
     BrowserModule,
