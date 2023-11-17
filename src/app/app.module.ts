@@ -37,6 +37,11 @@ import { ServicesTableComponent } from './components/pages/services-details/comp
 import { ContentCardComponent } from './components/common/content-card/content-card.component';
 import { ContentWidgetAreaComponent } from './components/common/content-widget-area/content-widget-area.component';
 import { GetStartedAreaComponent } from './components/common/get-started-area/get-started-area.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {ToastrModule} from 'ngx-toastr';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -78,7 +83,11 @@ import { GetStartedAreaComponent } from './components/common/get-started-area/ge
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+      ReactiveFormsModule,
+      HttpClientModule,
+      BrowserAnimationsModule,
+      ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
