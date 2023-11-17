@@ -1,0 +1,84 @@
+<app-navbar-style-one></app-navbar-style-one>
+
+<div class="services-details-area pb-70">
+    <div class="container">
+        <crossed-line-title [titleTinyPart]="'Software'" [titleBoldPart]="'Development'"></crossed-line-title>
+        <div class="row pt-45">
+            <div class="col-lg-8 col-md-12">
+                <div class="services-left">
+                    <div class="services-content">
+                        <img src="assets/img/service/service-details.jpg" alt="Images">
+                        <h2>Content Marketing</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore plicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6" *ngFor="let item of servicesCardsContent">
+                            <app-content-card [title]="item.title" [content]="item.content"></app-content-card>
+                        </div>
+                    </div>
+
+                    <div class="content-widget-area">
+                        <div class="row">
+                            <app-content-widget-area [image]="'assets/img/service/service-details-img2.png'">
+                                <div text>
+                                    <h2>The Entire Solution For Content Marketer</h2>
+                                    <p>Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit amet</p>
+                                    <ul>
+                                        <li><i class='bx bx-check'></i> The Field of Data Science</li>
+                                        <li><i class='bx bx-check'></i> SEO is Uniquely Built Around  </li>
+                                        <li><i class='bx bx-check'></i> Google’s search algorithm</li>
+                                    </ul>
+                                </div>
+                            </app-content-widget-area>
+                        </div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore tus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis onsectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+                    <div class="services-widget-list">
+                        <ul>
+                            <li class="active">
+                                <span>75%</span>
+                                <div class="content list1">
+                                    <h3>SEO & Marketing</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content list2">
+                                    <h3>Keywords Results</h3>
+                                </div>
+                                <span>66%</span>
+                            </li>
+                            <li>
+                                <span>43%</span>
+                                <div class="content list3">
+                                    <h3>Google Analytics</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content list2">
+                                    <h3>Off Page SEO</h3>
+                                </div>
+                                <span>15%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="services-widget-right">
+                    <app-services-table></app-services-table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="data-table-area">
+        <div class="container">
+            <app-get-started-area></app-get-started-area>
+        </div>
+    </div>
+</div>
+
+<app-footer-style-two></app-footer-style-two>
