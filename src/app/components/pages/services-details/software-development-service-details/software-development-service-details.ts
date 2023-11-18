@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SoftwareDevelopmentServiceDetails implements OnInit {
     servicesCardsContent: any = [{
-        title: 'Real-time Keyword Data',
-        content: 'Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit amet',
+        title: 'Digital Transformation services',
+        content: 'Safeguard the future success of your company and stay competitive in the global market',
     },{
-        title: 'Scalable Keyword Growth',
-        content: 'Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit amet',
+        title: 'Web and mobile development',
+        content: 'Deliver maximum value to your business with stunning custom web or mobile software',
     },{
-        title: 'ROI Obsessed Keywords',
-        content: 'Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit amet',
+        title: 'Cloud-based app development',
+        content: 'Effortlessly speed up development, improve final product quality, and increase productivity',
     },{
-        title: 'Total Keyword Growth Visibility',
-        content: 'Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit amet',
+        title: 'Improved business processes\n',
+        content: 'Boost employee productivity by providing effective management tools for your business operations',
     },
     ];
   constructor() { }
