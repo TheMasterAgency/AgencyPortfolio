@@ -1,0 +1,85 @@
+<app-navbar-style-one></app-navbar-style-one>
+
+<div class="services-details-area pb-70">
+    <div class="container">
+        <crossed-line-title [titleBoldPart]="'Data Analytics & Machine Learning'"></crossed-line-title>
+        <div class="row pt-45">
+            <div class="col-lg-8 col-md-12">
+                <div class="services-left">
+                    <div class="services-content">
+                        <img style="height: 350px" src="assets/img/service/service-data.png" alt="Images">
+                        <h2>Data-Driven Decisions: Your Gateway to Success</h2>
+                        <p>At <strong>TENDEXE</strong> we focus on empowering businesses with comprehensive data analytics and machine learning solutions, enabling the discovery of insights, process automation, and outcome prediction from data.</p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6" *ngFor="let item of servicesCardsContent">
+                            <app-content-card [title]="item.title" [content]="item.content"></app-content-card>
+                        </div>
+                    </div>
+                    <p>At the core of our operations, our team of exceptionally skilled data scientists and engineers are at the forefront of innovation. We adeptly navigate through the complexities of data, utilizing an extensive toolkit of cutting-edge technologies and refined methodologies. Our dedication lies in not only deciphering intricate data sets but also in the art of translating them into actionable insights that fuel your business growth.</p>
+
+                    <div class="content-widget-area">
+                        <div class="row">
+                            <app-content-widget-area [image]="'assets/img/service/service-details-img2.png'">
+                                <div text>
+                                    <h2>Why Choose TENDEXE?</h2>
+                                    <p>here are three major reasons that differentiate us and are able to manage this service perfectly :</p>
+                                    <ul>
+                                        <li><i class='bx bx-check'></i> Data Analysis  </li>
+                                        <li><i class='bx bx-check'></i> Machine Learning  </li>
+                                        <li><i class='bx bx-check'></i> Data Visualization  </li>
+                                    </ul>
+                                </div>
+                            </app-content-widget-area>
+                        </div>
+                    </div>
+
+                    <p>We pride ourselves on our deep-rooted commitment to staying at the vanguard of data analytics and machine learning. Our pursuit of excellence drives us to explore every avenue, uncovering patterns and correlations that hold the key to informed decision-making. We stand ready to collaborate with you, transforming your data into a strategic asset that propels your business forward. Get in touch with us today and let's embark on a journey where data becomes the catalyst for your success story.</p>
+
+                    <!--                    <div class="services-widget-list">-->
+                    <!--                        <ul>-->
+                    <!--                            <li class="active">-->
+                    <!--                                <span>75%</span>-->
+                    <!--                                <div class="content list1">-->
+                    <!--                                    <h3>SEO & Marketing</h3>-->
+                    <!--                                </div>-->
+                    <!--                            </li>-->
+                    <!--                            <li>-->
+                    <!--                                <div class="content list2">-->
+                    <!--                                    <h3>Keywords Results</h3>-->
+                    <!--                                </div>-->
+                    <!--                                <span>66%</span>-->
+                    <!--                            </li>-->
+                    <!--                            <li>-->
+                    <!--                                <span>43%</span>-->
+                    <!--                                <div class="content list3">-->
+                    <!--                                    <h3>Google Analytics</h3>-->
+                    <!--                                </div>-->
+                    <!--                            </li>-->
+                    <!--                            <li>-->
+                    <!--                                <div class="content list2">-->
+                    <!--                                    <h3>Off Page SEO</h3>-->
+                    <!--                                </div>-->
+                    <!--                                <span>15%</span>-->
+                    <!--                            </li>-->
+                    <!--                        </ul>-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="services-widget-right">
+                    <app-services-table></app-services-table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="data-table-area">
+        <div class="container">
+            <app-get-started-area></app-get-started-area>
+        </div>
+    </div>
+</div>
+
+<app-footer-style-two></app-footer-style-two>

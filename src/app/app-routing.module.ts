@@ -20,10 +20,11 @@ import { ServicesComponent } from './components/pages/services/services.componen
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
-import {ServicesDataComponent} from "./components/pages/services-data/services-data.component";
+import {ServicesDataComponent} from "./components/pages/services-details/services-data/services-data.component";
 import {
     SoftwareDevelopmentServiceDetails
 } from "./components/pages/services-details/software-development-service-details/software-development-service-details";
+import {SocialMediaServiceComponent} from './components/pages/services-details/social-media-service/social-media-service.component';
 
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
@@ -48,6 +49,7 @@ const routes: Routes = [
     {path: 'blog-details', component: BlogDetailsComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'software-development-details', component: SoftwareDevelopmentServiceDetails},
+    {path: 'social-media-management', component: SocialMediaServiceComponent},
     {path: '**', component: ErrorComponent}
 ];
 

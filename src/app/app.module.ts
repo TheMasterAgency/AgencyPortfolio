@@ -31,20 +31,30 @@ import { BlogDetailsComponent } from './components/pages/blog-details/blog-detai
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import {CrossedLineTitle} from './components/common/crossed-line-title/crossed-line-title';
-import { ServicesDataComponent } from './components/pages/services-data/services-data.component';
+import { ServicesDataComponent } from './components/pages/services-details/services-data/services-data.component';
 import { SoftwareDevelopmentServiceDetails } from './components/pages/services-details/software-development-service-details/software-development-service-details';
 import { ServicesTableComponent } from './components/pages/services-details/components/services-table/services-table.component';
 import { ContentCardComponent } from './components/common/content-card/content-card.component';
 import { ContentWidgetAreaComponent } from './components/common/content-widget-area/content-widget-area.component';
 import { GetStartedAreaComponent } from './components/common/get-started-area/get-started-area.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {ToastrModule} from 'ngx-toastr';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { SocialMediaServiceComponent } from './components/pages/services-details/social-media-service/social-media-service.component';
 
 
 @NgModule({
-  declarations: [
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        ToastrModule.forRoot(),
+        FormsModule
+    ],
+    declarations: [
     AppComponent,
     SeoAgencyComponent,
     AiStartupComponent,
@@ -79,15 +89,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
       ServicesTableComponent,
       ContentCardComponent,
       ContentWidgetAreaComponent,
-      GetStartedAreaComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-      ReactiveFormsModule,
-      HttpClientModule,
-      BrowserAnimationsModule,
-      ToastrModule.forRoot()
+      GetStartedAreaComponent,
+      SocialMediaServiceComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
