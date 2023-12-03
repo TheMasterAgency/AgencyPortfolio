@@ -1,47 +1,123 @@
 <app-navbar-style-one></app-navbar-style-one>
 
 <div class="container">
-    <crossed-line-title [titleTinyPart]="'Our'" [titleBoldPart]="'Services'"></crossed-line-title>
+    <crossed-line-title [titleTinyPart]="'Nos'" [titleBoldPart]="'Services'"></crossed-line-title>
 
-    <div class="row pt-45 d-flex">
-        <div class="col-lg-4 col-md-6">
+    <div class="services-holder row pt-45 d-flex">
+        <div class=" col-lg-4 col-md-6">
             <div class="services-item h-100">
-                <h3><a routerLink="/services-data">Data Analitics</a></h3>
+                <h3><a routerLink="/services-data">Technologies Avancées</a></h3>
                 <div class="services-item-img">
                     <a routerLink="/services-data"><img src="assets/img/service/service-icon7.png" alt="Images"></a>
                     <div class="img-circle"></div>
                 </div>
-                <p>Empowering businesses with comprehensive data analytics and machine learning solutions, enabling the discovery of insights, process automation, and outcome prediction from data.</p>
-                <a routerLink="/services-data" class="learn-btn">Learn more <i class='bx bx-plus'></i></a>
+                <div class="services-details">
+                    <div class="services-details-elmnt">
+                        Machine Learning et Intelligence Artificielle
+                    </div>
+                    <div class="services-details-elmnt">
+                        Reconnaissance visuelle
+                    </div>
+                    <div class="services-details-elmnt">
+                        Prédiction des risques
+                    </div>
+                    <div class="services-details-elmnt">
+                        Visualisation des températures quotidiennes
+                    </div>
+                </div>
+                <a  routerLink="/services-data" class="learn-btn">Learn more <i class='bx bx-plus'></i></a>
+
             </div>
         </div>
 
         <div class="col-lg-4 col-md-6">
             <div class="services-item h-100">
-                <h3><a routerLink="/social-media-management">Social Media Management</a></h3>
+                <h3><a routerLink="/social-media-management">Identité visuelle</a></h3>
                 <div class="services-item-img">
                     <a routerLink="/social-media-management"><img src="assets/img/service/service-icon8.png" alt="Images"></a>
                     <div class="img-circle"></div>
                 </div>
-                <p>Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit amet</p>
+                <div class="services-details">
+                    <div class="services-details-elmnt">
+                        Création de logo
+                    </div>
+                    <div class="services-details-elmnt">
+                        Gestion de comptes sur les réseaux sociaux
+                    </div>
+                    <div class="services-details-elmnt">
+                        Rédaction de contenu marketing
+                    </div>
+                </div>
                 <a routerLink="/social-media-management" class="learn-btn">Learn more <i class='bx bx-plus'></i></a>
+
             </div>
         </div>
 
         <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
             <div class="services-item h-100">
-                <h3><a routerLink="/software-development">Software Development</a></h3>
+                <h3><a routerLink="/software-development">développement logiciel</a></h3>
                 <div class="services-item-img">
                     <a routerLink="/software-development"><img src="assets/img/service/service-icon3.png" alt="Images"></a>
                     <div class="img-circle"></div>
                 </div>
-
-                <p>Custom software has the power to transform your business. company-specific digital solutions that can be the missing link in propelling your business forward.</p>
+                <div class="services-details">
+                    <div class="services-details-elmnt">
+                        Blog dynamique
+                    </div>
+                    <div class="services-details-elmnt">
+                        Site web vitrine e-commerce
+                    </div>
+                    <div class="services-details-elmnt">
+                        Applications Android et/ou iOS
+                    </div>
+                </div>
 
                 <a routerLink="/software-development" class="learn-btn">Learn more <i class='bx bx-plus'></i></a>
             </div>
         </div>
 
+        <div class="service-box col-lg-4 col-md-6">
+            <div class="services-item h-100">
+                <h3><a routerLink="/services">Coordination de Projets Informatiques</a></h3>
+                <div class="services-item-img">
+                    <a routerLink="/services"><img src="assets/img/service/service-icon7.png" alt="Images"></a>
+                    <div class="img-circle"></div>
+                </div>
+                <div class="services-details">
+                    <div class="services-details-elmnt">
+                        Chef de projets et ingénieurs experts
+                    </div>
+                    <div class="services-details-elmnt">
+                        Domaines de recherche et projets spécifiques
+                    </div>
+                </div>
+                <a  routerLink="/services" class="learn-btn">Learn more <i class='bx bx-plus'></i></a>
+
+            </div>
+        </div>
+
+        <div class="service-box col-lg-4 col-md-6">
+            <div class="services-item h-100">
+                <h3><a routerLink="/services">Formation IT</a></h3>
+                <div class="services-item-img">
+                    <a routerLink="/services"><img src="assets/img/service/service-icon7.png" alt="Images"></a>
+                    <div class="img-circle"></div>
+                </div>
+                <div class="services-details">
+                    <div class="services-details-elmnt">
+                        Cours disponibles
+                    </div>
+                    <div class="services-details-elmnt">
+                        Profils des formateurs
+                    </div>
+                    <div class="services-details-elmnt">
+                        Informations sur les sessions de formation
+                    </div>
+                </div>
+                <a  routerLink="/services" class="learn-btn">Learn more <i class='bx bx-plus'></i></a>
+
+            </div>
+        </div>
 
     </div>
 
